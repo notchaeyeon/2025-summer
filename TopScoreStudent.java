@@ -22,7 +22,11 @@ public class TopScoreStudent {
 				topIdx = i;	
 			}
 		}
-		
+
+
+//		for(int i = 0 ; i<=arr.length;i++) {
+//			if(arr[topIdx]<arr[i]) topIdx=i;
+//		}
 		return topIdx;
 	}
 }
