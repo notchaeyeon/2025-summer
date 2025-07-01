@@ -1,15 +1,19 @@
-package ch03;
+package ch07;
 
 public class Square {
-
-	public static void main(String[] args) {
-		int length = 4;
-		int result = square(length);
-		System.out.println(result);
+	int length;
+	int area(){
+		return length*length;
 	}
 	
-	public static int square(int length){
-		return length * length;
+
+	public static void main(String[] args) {
+		Square s1 = new Square();
+		
+		s1.length = 4;
+		
+		System.out.printf("한 변의 길이가 %d인 정사각형의 넓이: %d", s1.length, s1.area());
 		
 	}
+
 }
